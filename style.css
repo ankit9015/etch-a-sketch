@@ -1,0 +1,56 @@
+
+:root {
+    --background-color: rgb(47, 100, 9);
+    --primary-color: rgb(172, 148, 11);
+    --secondary-color: rgb(196, 48, 48);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    text-align: center;;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 2rem;
+}
+
+#options-container {
+    margin: auto;
+    width: 80vw;
+    padding: 2rem;
+    border: 5px solid var(--primary-color);
+}
+
+.key {
+    padding: 0.5rem 1rem;
+    color: white;
+    margin: 1rem 0.5rem;
+    background-color: var(--secondary-color);
+}
+
+#input-color {
+    padding: 0px;
+}
+
+#drawing-grid {
+    margin: 3rem ;
+    width: 80vmin;
+    height: 80vmin;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16. 2fr);
+    background-color: rgb(198, 198, 198);
+    border: 5px solid white;
+    
+}
+
+.cell {
+    background-color: white;
+    border: 1px solid black;
+}
+

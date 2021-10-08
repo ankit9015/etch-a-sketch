@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Etch a Sketch</h1>
+    </header>
+    <main>
+        <div id="options-container">
+            <button class="key" id="reset">Reset</button>
+            <button class="key" id="black">Black</button>
+            <button class="key" id="rgb">RGB</button>
+            <label class="key" for="input-color">
+                <input type="color" name="input-color" id="input-color">
+                Choose a Color
+            </label>
+            
+            <label class="key" for="grid-size">
+                Adjust grid size:
+                <input type="range" name="grid-size" id="grid-size" 
+            min="2" max="60" value="16" step="1">
+                <span id="show-size">16x16</span>
+            </label>
+        </div>
+
+
+        <div id="drawing-grid"></div>
+    </main>
+    <script src="./app.js" type="text/javascript"></script>
+</body>
+</html>
